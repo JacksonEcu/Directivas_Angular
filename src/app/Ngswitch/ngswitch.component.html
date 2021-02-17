@@ -1,0 +1,14 @@
+<ul *ngFor="let carta of cartas" [ngSwitch]= "carta.ico">
+    <li *ngSwitchCase="'♥'">
+      {{carta.ico}}=rojo
+    </li>
+    <li *ngSwitchCase="'♠'">
+      {{carta.ico}}=amarillo
+    </li>
+    <li *ngSwitchCase="'♣'">
+      {{carta.ico}}=azul
+    </li>
+    <li *ngSwitchCase="'♦'">
+      {{carta.ico}}=verde
+    </li>
+  </ul>
